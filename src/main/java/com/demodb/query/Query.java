@@ -13,5 +13,4 @@ import com.demodb.dto.ResultSet;
 public interface Query {
 	public ResultSet execute();
 	public Message isValid();
-	public void displayContent(ResultSet resultSet);
 }

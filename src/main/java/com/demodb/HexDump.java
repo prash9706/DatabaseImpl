@@ -52,18 +52,18 @@ public class HexDump {
 		
 		/* TODO: Add command line options to set boolean flags */
 
-		if(args.length == 0) {
+		/*if(args.length == 0) {
 			out.println();
 			out.println("ERROR: Must supply a file name to be displayed");
 			out.println("USAGE: java HexDump <file_name>");
 			out.println();
-			/* Exit the JVM */
+			 Exit the JVM 
 			System.exit(0);
-		}
+		}*/
 
 		try {
 			/* Open the file given in arg[0] as a RandomAccessFile */
-			raf = new RandomAccessFile(args[0],"r");
+			raf = new RandomAccessFile("C:/Users/Prashant  Yadav/workspace/DavisBaseDemo/data/catalog/davisbase_columns.tbl","r");
 			/* Call displayHexDump() method to display the file */
 			displayHexDump();
 		}
